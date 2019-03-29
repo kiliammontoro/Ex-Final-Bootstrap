@@ -11,59 +11,58 @@
   </head>
   <body>
     <div class="container bg-light">
-      <header class="row">
+      <header class="row pt-3 bg-warning">
         <div class="col-sm-2 col-md-2 logo-wrap bg-primary">
           <div class="lg-brand"><a href="#"><img class="img-fluid py-4" src="img/wm-logo.png" alt=""></a></div>
         </div>
         <!-- REDES -->
         <div class="col-sm-12 col-md-10 bg-secondary">
-          <div class="row h-100 bg-warning justify-content-lg-end justify-content-sm-center">
-            <div class="col-lg-4 bg-danger align-self-end">
+          <div class="row h-100 bg-info justify-content-center justify-content-md-end">
+            <div class="bg-danger align-self-end mt-4 mx-aut">
               <a target="_blank" class="social-icons bg-warning" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
               <a target="_blank" class="social-icons bg-warning" href="https://www.instagram.com/kiliam_montoro/?hl=es-la"><i class="fab fa-instagram"></i></a>
               <a target="_blank" class="social-icons bg-warning" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
               <a target="_blank" class="social-icons bg-warning" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
-
             </div>
           </div>
-
         </div>
       </header>
-      <nav class="row bg-success justify-content-center mt-4 mb-4">
-
+      <!-- ______________MENU______________ -->
+      <nav class="row bg-success justify-content-sm-center mt-4 mb-4">
           <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link h_nav_link" href="#">Primero</a>
+            <li class="col-12 col-md-2 nav-item">
+              <a class="nav-link h_nav_link text-center" href="#">Primero</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link h_nav_link" href="#">Segundo</a>
+            <li class="col-12 col-md-2 nav-item">
+              <a class="nav-link h_nav_link text-center" href="#">Segundo</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link h_nav_link" href="#">Tercero</a>
+            <li class="col-12 col-md-2 nav-item">
+              <a class="nav-link h_nav_link text-center" href="#">Tercero</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link h_nav_link" href="#">Cuarto</a>
+            <li class="col-12 col-md-2 nav-item">
+              <a class="nav-link h_nav_link text-center" href="#">Cuarto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link h_nav_link" href="#">Quinto</a>
+            <li class="col-12 col-md-2 nav-item">
+              <a class="nav-link h_nav_link text-center" href="#">Quinto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link h_nav_link" href="#">Sexto</a>
+            <li class="col-12 col-md-2 nav-item">
+              <a class="nav-link h_nav_link text-center" href="#">Sexto</a>
             </li>
           </ul>
-
-
       </nav>
+
+      <!-- ______________CUERPO______________ -->
       <div class="row">
-        <div class="col bg-info">
+        <div class="col bg-info py-5">
+          <!-- Post 01 -->
           <div class="card">
             <div class="card-body">
-              <h2 class="card-title">Kiss <small>End of the Road</small></h2>
+              <h2 class="card-title display-4">Kiss <small class="text-muted">End of the Road</small></h2>
               <p class="card-text card-text-01">
-                <h6>Michael Chaiken / Republicano Americano</h6>
+                <h6>Michael Chaiken | Republicano Americano</h6>
                 <div class="row mt-4">
                   <div class="col col-sm-12 col-md-4">
-                    <img class="img-fluid bg-warning" src="img/kiss-end.png" alt="">
+                    <img class="w-100 rounded bg-warning" src="img/kiss-end.png" alt="">
                   </div>
                   <div class="col-sm-12 col-md-8 mt-4 mt-sm-4 mt-md-0 mt-lg-0">
                     <p class="card-text">Yo era un pocojoven para el principio.
@@ -76,47 +75,108 @@
                     Se aseguró de no dar spoilers. Él dijo: "Sólo mira". <br><br>
                     Su declaración de la destreza en vivo de la banda demostró estar bien fundada.</p>
                   </div>
-                  <div class="card-body col mt-4">
+                  <div class="card-body line_separate col mt-4">
+                    <!-- Form -->
                     <form class="" action="index.html" method="post">
-                      <div class="form-group">
-                        <label for="Mensaje">Mensaje</label>
-                        <textarea class="form-control" id="Mensaje" rows="3" placeholder="Escribe tu comentario"></textarea>
+                      <h5>DEJE UN COMENTARIO</h5><br>
+                      <div class="form-row">
+
+                        <div class="form-group col-12">
+                          <label for="Mensaje">Mensaje</label>
+                          <textarea class="form-control" id="Mensaje" rows="3" placeholder="Escribe tu comentario"></textarea>
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                          <label for="nombre">Nombres y Apellidos</label>
+                          <input class="form-control" id="nombre" type="text" name="nom" value="">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                          <label for="mail">Mail</label>
+                          <input class="form-control" id="mail" type="email" name="nom" value="" required>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary ml-1 mt-3">Enviar</button>
                       </div>
-                      <div class="form-group">
-                        <label for="nombre">Nombres</label>
-                        <input class="form-control" id="nombre" type="text" name="nom" value="">
-                      </div>
-                      <div class="form-group ">
-                        <label for="mail">Mail</label>
-                        <input class="form-control" id="mail" type="email" name="nom" value="" required>
-                      </div>
-                      <button type="button" class="btn btn-outline-secondary">Enviar</button>
                     </form>
-
-
-
                   </div>
-
                 </div>
-
-
-
-
-
-
-
             </div>
-
           </div>
+          <br><br>
 
+          <!-- Post 02 -->
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title display-4">Skid Row <small <small class="text-muted">Slave of the Grind</small></h2>
+              <p class="card-text card-text-01">
+                <h6>Skid Row Press | 19 de marzo de 2019</h6>
+                <div class="row mt-4">
+                  <div class="col-sm-12 col-md-8 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
+                    <p class="card-text">Tag's se enorgullece de anunciar el próximo espectáculo en la Serie de Conciertos 2019 en el escenario de verano de Budweiser en Tag's. 'The Legend Continues' con The Metal Music y Mayhem Party, con Vince Neil, con Skid Row y Lita Ford. Viernes, 5 de julio - Las puertas abren a las 5:30 pm, el show comienza a las 7:00 pm.<br><br>
+                    Las entradas para The Metal Music y Mayhem Party, con Vince Neil, con Skid Row y Lita Ford salen a la venta al precio anticipado de solo $ 29.75 para la admisión general, $ 49.75 asientos reservados, $ 69.75 Gold Circle, $ 149 de apertura para el paquete VIP, y $ 229 paquete VIP de Headliner.<br><br>
+                    ¡Las entradas tienen un descuento del 15% como reserva anticipada y volverán al precio total dos semanas antes del espectáculo! (El precio indicado es el precio anticipado. Se aplicará un 15% adicional para cualquier compra de boletos dos semanas antes del espectáculo).<br><br>
+                    Los boletos saldrán a la venta el viernes 15 de marzo a las 10:00 am. Boletos disponibles en línea en TagTickets.com, por teléfono 800.650.TAGS o en persona en Tag's Restaurant.</p>
+                  </div>
+                  <div class="col col-sm-12 col-md-4">
+                    <img class="img-fluid rounded bg-warning" src="img/skid_cover.jpg" alt="">
+                  </div>
+                  <div class="card-body line_separate col mt-4">
+                    <!-- Form -->
+                    <form class="" action="index.html" method="post">
+                      <h5>DEJE UN COMENTARIO</h5><br>
+                      <div class="form-row">
+
+                        <div class="form-group col-12">
+                          <label for="Mensaje">Mensaje</label>
+                          <textarea class="form-control" id="Mensaje" rows="3" placeholder="Escribe tu comentario"></textarea>
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                          <label for="nombre">Nombres y Apellidos</label>
+                          <input class="form-control" id="nombre" type="text" name="nom" value="">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                          <label for="mail">Mail</label>
+                          <input class="form-control" id="mail" type="email" name="nom" value="" required>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary ml-1 mt-3">Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 bg-warning">
-          <p>Aside</p>
+        <!-- PLAYLIST -->
+        <div class="col-sm-12 col-md-4 col-lg-4 bg-warning py-5 d-none d-sm-block">
+          <div class="row">
+            <div class="col col-sm-12">
+              <label class="sr-only" for="inlineFormInputGroup">Buscar</label>
+              <div class="input-group mb-2 ">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-search"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Buscar">
+              </div>
+            </div>
+            <div class="col col-12">
+              <div class="col-12 col-auto list-group mt-4">
+                <h5 class="list-group-item"><i style="font-size:2rem;"class="fas fa-list-alt mr-1"></i> Playlist</h5>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Monkey Business</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Slave to the Grind</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> The Threat</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Quicksand Jesus</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Psycho Love</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Get the Fuck Out</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Livin' on a Chain Gang</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Creepshow</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> In a Darkened Room</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Riot Act</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Mudkicker</a>
+                <a class="list-group-item list-group-item-action" href="#"><i class="far fa-play-circle mr-1"></i> Wasted Time</a>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
-
     </div>
-
   </body>
 </html>
