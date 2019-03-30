@@ -4,12 +4,16 @@
 }
 
 *{
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
+  color: #cecce5;
+}
+
+body{
+  background-color: #00000A;
 }
 
 .lg-brand{
-  width: 150px;
-  background-color: yellow;
+  width: 160px;
   margin: auto;
 }
 
@@ -22,11 +26,16 @@
   font-size: 1rem;
   color: white;
   border-radius: 8px;
-  padding-top: 10px
+  padding-top: 10px;
+  background-color: #312E5C;
 }
 
 .h-100{
   height: 100%;
+}
+
+.nav-separate{
+  border-top: solid 0.1px #CBA1FC;
 }
 
 .h_nav_link{
@@ -34,8 +43,48 @@
   padding-bottom: 1.2rem;
 }
 
+/*
+.wrap-content{
+  border: solid 1px #312E5C;
+  border-radius: 8px;
+
+} */
+
+.card{
+  border: 1px solid #312E5C;
+  /*background-color: #242244;*/
+  background-color: rgba(203, 161, 252, 0.13);
+}
+
+.card-title{
+  color: #CBA1FC;
+  padding-left: 1.1rem;
+  border-left: solid 12px #CBA1FC;
+}
+
 .card-text{
   font-size: 0.8rem !important;
+}
+
+a {
+    color: #CBA1FC;
+    text-decoration: none;
+    background-color: transparent;
+    font-variant: small-caps;
+    margin-top: 1px;
+    transition: all 0.5s;
+}
+
+a:hover{
+  color: #f1e6fe;
+}
+
+.menh{
+    border-top: solid 8px #00000A;
+}
+
+.menh:hover{
+    border-top: solid 8px #CBA1FC;
 }
 
 p .card-text-01{
@@ -47,6 +96,7 @@ p .card-text-01{
 }
 
 img{
+  width: 100%;
   margin: 0px !important;
   padding: 0px !important;
 }
@@ -55,17 +105,36 @@ h6{
   font-size: 0.9rem;
   font-weight: lighter;
   margin-bottom: 2.5rem;
+  color: #f1e6fe;
+}
+
+.form-control{
+  border: 1px solid #312E5C;
+  background-color: #cecce5;
+}
+
+.btn-outline-secondary {
+    color: #cecce5;
+    border-color: #cecce5;
+}
+
+.btn-outline-secondary:hover {
+    color: #242244;
+    font-weight: bold;
+    border-color: #CBA1FC;
+    background-color: #CBA1FC;
 }
 
 .text-muted{
   font-weight: lighter !important;
   font-size: 2.5rem;
+  color: #f1e6fe !important;
 }
 
 .line_separate{
   margin-top: 3rem !important;
   padding-top: 2.5rem !important;
-  border-top: solid 1px #eceff1;
+  border-top: solid 1px #312E5C;
 }
 
 .display-4{
@@ -75,4 +144,21 @@ h6{
 
 .social-wrap{
   min-width: 270px !important;
+}
+
+.list-group-item{
+  margin-bottom: -2px;
+  background-color: #000000;
+  /* border: 1px solid rgb(61, 206, 199); */
+  border-bottom: solid #312E5C;
+  color: #cecce5;
+}
+
+.list-group-item:hover{
+  background-color: rgba(203, 161, 252, 0.1);
+  color: #cecce5;
+}
+
+.fa, .far, .fas {
+    color: #CBA1FC;
 }
