@@ -9,12 +9,37 @@
 }
 
 body{
-  background-color: #00000A;
+  /*background-color: #00000A;*/
+  background: linear-gradient(312deg, #0e001e, #4e2f81, #0e001e, #00cbe1);
+  background-size: 800% 800%;
+  -webkit-animation: bganim 54s ease infinite;
+  -moz-animation: bganim 54s ease infinite;
+  animation: bganim 54s ease infinite;
+}
+
+@-webkit-keyframes bganim {
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
+@-moz-keyframes bganim {
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
+@keyframes bganim {
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
 }
 
 .lg-brand{
   width: 160px;
   margin: auto;
+}
+
+.social-wrap{
+  min-width: 270px !important;
 }
 
 .social-icons{
@@ -24,10 +49,15 @@ body{
   display: inline-block;
   text-align: center;
   font-size: 1rem;
-  color: white;
+  color: #cecce5!important;
   border-radius: 8px;
   padding-top: 10px;
-  background-color: #312E5C;
+  background-color: rgba(49, 46, 92, 0.99);
+  transition: background-color 0.8s;
+}
+
+.social-icons:hover{
+  background-color: rgba(49, 46, 92, 0.4);
 }
 
 .h-100{
@@ -36,19 +66,13 @@ body{
 
 .nav-separate{
   border-top: solid 0.1px #CBA1FC;
+  min-height: 60px;
 }
 
 .h_nav_link{
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
 }
-
-/*
-.wrap-content{
-  border: solid 1px #312E5C;
-  border-radius: 8px;
-
-} */
 
 .card{
   border: 1px solid #312E5C;
@@ -70,7 +94,6 @@ a {
     color: #CBA1FC;
     text-decoration: none;
     background-color: transparent;
-    font-variant: small-caps;
     margin-top: 1px;
     transition: all 0.5s;
 }
@@ -80,11 +103,12 @@ a:hover{
 }
 
 .menh{
-    border-top: solid 8px #00000A;
+    border-top: solid 8px #CBA1FC);
+    font-variant: small-caps;
 }
 
 .menh:hover{
-    border-top: solid 8px #CBA1FC;
+    border-top: solid 8px rgba(203, 161, 252, 0.3);
 }
 
 p .card-text-01{
@@ -109,7 +133,7 @@ h6{
 }
 
 .form-control{
-  border: 1px solid #312E5C;
+  border: 1px solid #bdbbdd;
   background-color: #cecce5;
 }
 
@@ -142,15 +166,26 @@ h6{
   margin-top: 6px;
 }
 
-.social-wrap{
-  min-width: 270px !important;
-}
-
 .list-group-item{
   margin-bottom: -2px;
-  background-color: #000000;
-  /* border: 1px solid rgb(61, 206, 199); */
-  border-bottom: solid #312E5C;
+  background-color: rgba(0, 0, 10, 0);
+  /* border: 1px solid rgb(61, 206, 199);
+  border-bottom: solid #312E5C;*/
+  border-bottom: solid rgba(98, 167, 216, 0.2);
+  border-top-color: rgba(0, 0, 0, 0.0001);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0.0001);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-left-color: rgba(0, 0, 0, 0.0001);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
   color: #cecce5;
 }
 
@@ -160,5 +195,13 @@ h6{
 }
 
 .fa, .far, .fas {
-    color: #CBA1FC;
+  color: #62a7d8;
+  /*color: #CBA1FC;*/
+}
+
+@media (max-width: 600px) {
+  .nav-separate{
+    border-top: solid 0.1px #CBA1FC;
+    min-height: 400px;
+  }
 }
